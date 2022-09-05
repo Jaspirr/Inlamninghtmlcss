@@ -32,7 +32,7 @@
 }
 
 /* general */
-html, body {
+html, body, {
     font-size: 16px;
     line-height: 1.5;
     font-family: var(--font-roboto);
@@ -59,7 +59,7 @@ html, body {
 
     .top-menu .site-settings{
         display: flex;
-    }        
+    }
     
         .top-menu .site-settings .dropdown-theme {
             background-color: var(--color-theme);
@@ -70,6 +70,7 @@ html, body {
             background-color: var(--color-theme);
             color: var(--color-white);
             border: none;
+            
             }
                 .top-menu .site-settings .dropdown-theme button:hover {
                     color: var(--color-theme-dark);
@@ -125,14 +126,15 @@ html, body {
     /* main-menu */
 
     .main-menu {
-        padding: 2rem 0;
+        background-color: var(--color-white);
     }
 
-        .main-menu .container {
+        .main-menu > .container {
             display: flex;
             justify-content: space-between;
             align-items: center;
-
+            padding-top: 2.2rem;
+            padding-bottom: 2.2rem;
         }
 
         .main-menu .brand {
@@ -144,7 +146,7 @@ html, body {
         }
 
         .main-menu .links {
-            flex: 4;
+            flex: 3;
             display: flex;
             justify-content: end;
             align-items: center;
@@ -168,7 +170,14 @@ html, body {
             .main-menu .menu-links .menu-link i {
                 font-size: var(--font-size-16);
            }
-
+        
+        .main-menu nav {
+            border-top: 1px solid var(--color-gray-2);
+        }
+            .main-menu > nav > .container {
+                display: flex;
+                justify-content: space-between;
+            }
 
 
 
