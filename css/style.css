@@ -429,8 +429,51 @@
             grid-column: 5/ -1;
             grid-row: 3/ -1;
         }
+    .out-of-stock  {
+        color: #FE6C6C;
+    }
+        
+    .fa-cart-shopping {
+        font-size: 0.9em;
+    }
+    .card {
+        position: relative;
+        height: 400px;
+        
+    }
 
+    .card-menu {
+        position: absolute;
+        z-index: 1;
+        top: 20px;
+        right: 10%;
+        list-style: none;
+        margin: auto;
+        padding: 0.5rem;
+        border: 1px solid black;
+        font-size: 20px;
+        border-radius: 25px;
+        background-color: #FFFFFF;
+    }
+        .card-menu li a {
+            color: #AAAAAA;
+        }
+            .card-menu li a:hover {
+                color: #20D3C2 ;
+            }
 
+    .card-background {
+        position: absolute;
+        bottom: 0;
+        height: 15%;
+        width: 100%;
+        background-color: #0e153d;
+        opacity: 0.90;
+        transition: height 0.25s ease-in-out;
+    }      
+        .card:hover .card-background {
+            height: 100%;
+        }
 
 
 
