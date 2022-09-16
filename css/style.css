@@ -562,6 +562,7 @@
 
         .for-new-costumer {
             background-color: var(--color-gray-1);
+            overflow: hidden;
             
            
         }
@@ -572,38 +573,55 @@
             align-items: center;
             height: 500px;
             width: 100%;
-           
-            
-            
         }
        
-        .for-new-costumer .container .discount {
-            background-color: #20D3C2;
-            position: relative;
-            height: 100%;
-            width: 300px;
-        }
+                .for-new-costumer .container .discount {
+                    background-color: #20D3C2;
+                    position: relative;
+                    height: 0%;
+                    width: 300px;
+                    transition: 0.4s ease-in-out;
+                          
+                }
+                    .for-new-costumer .container:hover .discount {
+                        height: 100%;
+                        
+                    }
 
-            .for-new-costumer .container .discount h1 {
-                color: var(--color-white);
-                position: absolute;
-                font-size: 3.75rem;
-                font-style: var(--font-play);
-                font-weight: var(--font-weight-bold);
-                top: 36%;
-                left: 35px;
-            
-            }   
+                .for-new-costumer .container .discount h1 {
+                    color: var(--color-white);
+                    position: absolute;
+                    font-size: 3.75rem;
+                    font-style: var(--font-play);
+                    font-weight: var(--font-weight-bold);
+                    top: 36%;
+                    left: 35px;
+                    opacity: 0;
 
-            .for-new-costumer .container .discount h2 {
-                color: var(--color-white);
-                position: absolute;
-                font-size: 2.25rem;
-                font-style: var(--font-play);
-                font-weight: var(--font-weight-bold);
-                top: 207px;
-                right: 60px;
-            }
+                
+                }   
+                .for-new-costumer .container:hover .discount h1 {
+                    height: 100%;
+                    opacity: 1;
+                }
+
+                .for-new-costumer .container .discount h2 {
+                    color: var(--color-white);
+                    position: absolute;
+                    font-size: 2.25rem;
+                    font-style: var(--font-play);
+                    font-weight: var(--font-weight-bold);
+                    top: 207px;
+                    right: 60px;
+                    opacity: 0;
+                   
+                }
+                .for-new-costumer .container:hover .discount h2 {
+                    height: 100%;
+                    opacity: 1;
+                   
+                   
+                }
 
 
                 .for-new-costumer .container .discount p {
@@ -612,22 +630,29 @@
                     font-family: var(--font-roboto);
                     font-size: var(--font-size-16);
                     position: absolute;
-                    bottom: 180px;
+                    top: 280px;
                     right: 75px;
+                    opacity: 0;
+                }
+                .for-new-costumer .container:hover .discount p {
+                    height: 100%;
+                    opacity: 1;
                 }
 
                     .for-new-costumer .container .discount a {
                         position: absolute;
-                        bottom: 125px;
+                        top: 325px;
                         right: 70px;
                         border: var(--color-theme-dark);
                         transition: 0.2s ease-in-out;
                     }
+                        
 
         .for-new-costumer .learn-more {
             position: relative;
             height: 100%;
             width: 550px;
+            
         }
 
             .for-new-costumer .learn-more p {
@@ -640,11 +665,94 @@
                     border: var(--color-theme-dark);
                     bottom: 125px;
                     left: 0;
-                    transition: 0.2s ease-in-out;
+                    
                 }
+        /* FLASH SALE */
+    
+        .flash-sale {
+            background-color: var(--color-theme-dark);
+            overflow: hidden;
+           
+        }
+        
+            .flash-sale .container-countdown {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                height: 500px;
+                width: 100%;
+                margin-left: 310px;
+                padding-right: 610px;
+            }
+        
+                    .flash-sale .container-countdown .flash-discount {
+                        background-color: #20D3C2;
+                        position: relative;
+                        height: 100%;
+                        width: 300px;
+                        transition: 0.4s ease-in-out;
+                        margin-bottom: 400px;   
+                            
+                    }
+
+                    .flash-sale .container-countdown .flash-discount h1 {
+                        color: var(--color-white);
+                        position: absolute;
+                        font-size: 3.75rem;
+                        font-style: var(--font-play);
+                        font-weight: var(--font-weight-bold);
+                        top: 50%;
+                        left: 20%;
+
+                    }   
+                    .flash-sale .container-countdown .flash-discount h2 {
+                        color: var(--color-white);
+                        position: absolute;
+                        font-size: 3.75rem;
+                        font-style: var(--font-play);
+                        font-weight: var(--font-weight-bold);
+                        top: 60%;
+                        left: 27%;
+
+                    }   
+                
 
 
+                    .flash-sale .container-countdown .flash-discount p {
+                        color: var(--color-white);
+                        font-weight: var(--font-weight-medium);
+                        font-family: var(--font-roboto);
+                        font-size: 1.5rem;
+                        position: absolute;
+                        top: 78%;
+                        left: 21%;
+                    
+                    }
+            
+            .flash-sale .countdown {
+                
+                padding: 1rem;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                max-width: 650px;
+                margin: 0 1rem;
+                flex: 1;
+                border-radius: var(--border-radius-small);
+               
 
+            }
+                    
+           .flash-sale .in-cirkle {
+                position: relative;
+                display: inline-block;
+           }
+           .flash-sale .in-cirkle #cirkle {
+                position: absolute;
+                
+           }
+            .flash-sale .in-cirkle 
+                
 
 
 @media (min-width: 578px) {
