@@ -493,7 +493,7 @@
                     font-size: 0.875rem;
                     padding-left: 0.9rem;
                     padding-right: 0.9rem;
-                    margin: 0.5rem 0;
+                     margin: 0.5rem 0;
                 }
                 
                 .new-arrivals .card .card-body .card-old-price {
@@ -688,70 +688,107 @@
                     .flash-sale .container-countdown .flash-discount {
                         background-color: #20D3C2;
                         position: relative;
+                        display: hidden;
+                        overflow: hidden;
+                    }
+                    .flash-sale .container-countdown:hover .flash-discount {
+                        background-color: #20D3C2;
+                        position: relative;
                         height: 100%;
                         width: 300px;
-                        transition: 0.4s ease-in-out;
-                        margin-bottom: 400px;   
+                        margin-bottom: 400px;  
+                        transition: 0.6s ease-in-out;
                             
                     }
-
-                    .flash-sale .container-countdown .flash-discount h1 {
-                        color: var(--color-white);
-                        position: absolute;
-                        font-size: 3.75rem;
-                        font-style: var(--font-play);
-                        font-weight: var(--font-weight-bold);
-                        top: 50%;
-                        left: 20%;
-
-                    }   
-                    .flash-sale .container-countdown .flash-discount h2 {
-                        color: var(--color-white);
-                        position: absolute;
-                        font-size: 3.75rem;
-                        font-style: var(--font-play);
-                        font-weight: var(--font-weight-bold);
-                        top: 60%;
-                        left: 27%;
-
-                    }   
-                
-
-
-                    .flash-sale .container-countdown .flash-discount p {
-                        color: var(--color-white);
-                        font-weight: var(--font-weight-medium);
-                        font-family: var(--font-roboto);
-                        font-size: 1.5rem;
-                        position: absolute;
-                        top: 78%;
-                        left: 21%;
                     
-                    }
+                        .flash-sale .container-countdown .flash-discount h1 {
+                            color: var(--color-white);
+                            position: absolute;
+                            font-size: 3.75rem;
+                            font-style: var(--font-play);
+                            font-weight: var(--font-weight-bold);
+                            top: 50%;
+                            left: 20%;
+
+                        }   
+                        
+                        .flash-sale .container-countdown .flash-discount h2 {
+                            color: var(--color-white);
+                            position: absolute;
+                            font-size: 3.75rem;
+                            font-style: var(--font-play);
+                            font-weight: var(--font-weight-bold);
+                            top: 60%;
+                            left: 27%;
+
+                        }   
+                    
+                        .flash-sale .container-countdown .flash-discount p {
+                            color: var(--color-white);
+                            font-weight: var(--font-weight-medium);
+                            font-family: var(--font-roboto);
+                            font-size: 1.5rem;
+                            position: absolute;
+                            top: 78%;
+                            left: 21%;
+                        
+                        }
             
             .flash-sale .countdown {
-                
-                padding: 1rem;
+                position: relative;
+                top: -10%;
                 display: flex;
+                flex: 1;
                 justify-content: space-evenly;
                 align-items: center;
                 max-width: 650px;
-                margin: 0 1rem;
-                flex: 1;
+                margin: 0;
                 border-radius: var(--border-radius-small);
-               
 
             }
-                    
-           .flash-sale .in-cirkle {
+
+            .flash-sale .countdown #cirkle {
                 position: relative;
-                display: inline-block;
-           }
-           .flash-sale .in-cirkle #cirkle {
-                position: absolute;
+                background-color: var(--color-white);
+                border-radius: 50%;
+                outline: dashed var(--color-theme);
+                height: 120px;
+                width: 120px;
+               
+            }
+                .flash-sale .countdown #cirkle h1 {
+                    color: var(--color-theme);
+                    position: absolute;
+                    top: 40%;  
+                    left: 50%; 
+                    transform: translate(-50%, -50%);
                 
-           }
-            .flash-sale .in-cirkle 
+                }
+                
+                .flash-sale .countdown #cirkle p {
+                    position: absolute;
+                    top: 70%;  
+                    left: 50%; 
+                    transform: translate(-50%, -50%);
+                    color: #0E153D;
+                    font-style: var(--font-roboto);
+                    font-weight: var(--font-weight-regular);
+                    font-size: 1.01rem;
+                }
+
+            .flash-sale .countdown .btn-white {
+                position: absolute;
+                border: var(--color-theme-dark);
+                top: 140%;
+                right: 37%;
+                
+
+            }
+                .flash-sale .countdown .btn-white:hover {
+                    background-color: var(--color-theme);
+                    transition: 0.25s ease-in-out;
+                }
+                    
                 
 
 
