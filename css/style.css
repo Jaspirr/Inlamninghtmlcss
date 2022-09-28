@@ -906,6 +906,9 @@
                 }
 
         /* TOP SELLERS */
+
+
+
     
     .top-sellers .grid {
         display: grid;
@@ -945,7 +948,13 @@
             transition: 0.25s ease-in-out;
             overflow: hidden;
         }
+
+        /* fixar till då att själva carden startar på samma nivå som de andra cardsen */
+            .top-sellers .top-sellers-box .first-child .top-sellers-box-title {
+                height: 7%;
+            }
        
+      
             .top-sellers .top-sellers-box:hover .top-sellers-box-title {
                 height: 100%;
                 opacity: 0.9;
@@ -956,7 +965,7 @@
                     position: absolute;
                     bottom: 0;
                     font-size: 1.125rem;
-                    margin-bottom: 1rem;
+                    margin-bottom: 0.8rem;
                     transition: 0.25s ease-in-out;
                     font-weight: var(--font-weight-regular);
                 }
@@ -1010,19 +1019,51 @@
             opacity: 1;
             transition: 0.25s ease-in-out;
         }
-    
-    .top-sellers .top-sellers-box .top-sellers-menu {
+        
+    .top-sellers .container-top-sellers .top-card-menu {
         position: absolute;
-        z-index: -1;
+        z-index: 1;
+        top: 110%;
         right: 1rem;
         list-style: none;
+        margin: auto;
         padding: 0.55rem;
         font-size: 1.25rem;
         border-radius: var(--border-radius-medium);
         background-color: var(--color-white);
         transition: 0.25s ease-in-out;
+        opacity: 0;
     }
-        
+        .top-sellers .container-top-sellers .first-child:hover .top-card-menu  {
+            top: 20px;
+            opacity: 1;
+        }
+            .top-sellers .container-top-sellers .first-child .top-card-menu li {
+                margin-top: 0.3rem;
+                margin-bottom: 0.3rem;
+                font-size: 1.0em;
+            }
+
+            .top-sellers .container-top-sellers .first-child .top-card-menu li a {
+                color: var(--color-gray-0);
+            }
+
+                .top-sellers .container-top-sellers .first-child .top-card-menu li a:hover {
+                    color: var(--color-theme);
+                }
+    
+    .top-sellers .container-top-sellers .first-child .top-text-theme {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        padding: 1rem;
+        color: var(--color-theme);
+        opacity: 0;
+        transition: 0.25s ease-in-out;
+    }
+        .top-sellers .container-top-sellers .first-child:hover .top-text-theme {
+            opacity: 1;
+        }
 
     #top-sellers-box-1 {
         grid-column: 1/3;
@@ -1042,6 +1083,8 @@
         background-color: var(--color-gray-2);
     }
 
+    
+
 /* SUBSCRIBE */
 
    .subscribe-now {
@@ -1053,9 +1096,9 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            height: 500px;
+            height: 400px;
             width: 100%;
-            margin-left: 420px;
+            margin-left: 295px;
         }
         .subscribe-now .container strong {
             font-size: 2.25rem;
@@ -1089,8 +1132,8 @@
         }
             .subscribe-now .email-subscribe a {
                 position: absolute;
-                right: 83px;
-                margin-top: 3.1px;
+                right: 103px;
+                margin-top: 3.109px;
                 font-family: var(--font-roboto);
                 font-size: 1rem;
                 font-weight: var(--font-weight-regular);
@@ -1102,9 +1145,12 @@
         height: 100%;
         width: 640px;
         background-color: var(--color-gray-1);
-        margin-right: 255px;
+        margin-right: 11px;
     }
         
+
+    /* Login and register site */
+
     .site-title {
         background-color: var(--color-theme-dark-light);
         color: #ffffff;
@@ -1195,11 +1241,11 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         column-gap: 2rem;
-        
     }
     .external-socialmedia-buttons .facebook-button {
         text-align: left;
     }
+    /* Får inte till rätt font i button */
     .external-socialmedia-buttons .facebook-button button {
         background-image: url(../images/buttons/facebook-login-button.svg);
         background-repeat: no-repeat;
@@ -1213,6 +1259,7 @@
     .external-socialmedia-buttons .google-button {
         text-align: right;
     }
+    /* Får inte till rätt font i button */
     .external-socialmedia-buttons .google-button button {
         background-image: url(../images/buttons/google-login-button.svg);
         background-repeat: no-repeat;
@@ -1226,8 +1273,26 @@
             filter: brightness(90%);
         }
     
-                    
+  /* End of the site  */
 
+    .footer {
+        background-color: var(--color-theme-dark);
+        height: 55px;
+        width: 100%;
+    }
+
+    .footer .end-of-site {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        color: var(--color-white);
+        padding-top: 15px;
+        margin-left: 308px;
+    }
+        .footer .end-of-site p {
+            font-family: var(--font-roboto);
+            font-weight: var(--font-weight-regular);
+        }
 
 @media (min-width: 578px) {
 
