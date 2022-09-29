@@ -1,0 +1,139 @@
+.html , .body {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: var(--font-roboto);
+    font-weight: var(--font-weight-regular);
+    color: var(--color-theme-dark);
+}
+
+.btn-theme {
+    background-color: var(--color-theme);
+    color: var(--color-white);
+    border-radius: var(--border-radius-medium);
+    font-weight: var(--font-weight-medium);
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+}
+    .btn-theme:hover {
+        background-color: var(--color-theme-dark);
+        color: var(--color-white);
+    }
+
+    .btn-white {
+        background-color: var(--color-white);
+        color: var(--color-theme);
+        border-radius: var(--border-radius-medium);
+        font-weight: var(--font-weight-medium);
+        padding-left: 1.75rem;
+        padding-right: 1.75rem;
+    }
+        .btn-white:hover {
+            background-color: var(--color-theme-dark);
+            color: var(--color-white);
+        }
+
+    .bg-theme {
+        background-color: var(--color-theme);
+    }
+
+    .text-theme {
+        color: var(--color-theme);
+    }
+
+    .instock {
+        color: var(--color-product-instock)
+    }
+    
+    .outofstock {
+        color: var(--color-product-outofstock)
+    }
+
+    .required {
+        color: var(--color-theme);
+    }
+    
+    .section-title {
+        padding: 3rem 0;
+        color: var(--color-theme-dark);
+        text-align: center;
+    }
+    
+        .section-title h1 {
+            font-family: var(--font-play);
+            font-weight: var(--font-weight-bold);
+            font-size: 45px;
+        }
+            .section-title h1 span {
+                color: var(--color-theme);
+            }
+        
+        .section-title p {
+            margin: 1.5rem 0;
+        }
+
+    a {
+        color: var(--color-theme);
+        font-weight: var(--font-weight-regular);
+        text-decoration: none;
+    }
+    a:hover {
+        color: var(--color-theme-dark);
+        text-decoration: underline;
+    }
+    
+    .form-theme {
+        margin: 6rem 0;
+
+    }
+
+        .form-theme .card {
+        padding: 1.5rem;
+        border: none;
+        border-radius: var(--border-radius-small);
+        background-color: var(--color-gray-1);
+        }
+
+
+            .form-theme .card .card-body h1 {
+                font-family: var(--font-roboto);
+                font-weight: var(--font-weight-medium);
+                font-size: 1.5rem;
+                color: var(--color-theme-dark);
+            }
+
+            .form-theme .card .card-body .card-text {
+                margin: 1.5rem 0;
+                line-height: 2;
+            }
+
+                .form-theme .card .card-body .card-text a {
+                    font-weight: var(--font-weight-medium);
+                }
+
+                .form-theme .card .card-body .card-text.text-small {
+                    color: var(--color-gray-5);
+                    font-size: 0.875rem;
+                }
+
+    .form-theme form input[type=checkbox] {
+        height: 20px;
+        width: 20px;
+        display: inline-block;
+        margin-right: 0.5rem;
+    }
+
+    .form-theme form input[type=text],
+    .form-theme form input[type=email], 
+    .form-theme form input[type=password]  {
+        display: block;
+        width: 100%;
+        border: none;
+        border-radius: var(--border-radius-small);
+        padding: 0.5rem 0.9rem;
+        margin: 0.2rem 0;
+    }
+
+        .form-theme form input:focus {
+            outline: 0;
+            box-shadow: 0 0 2px 0 var(--color-theme);
+        }

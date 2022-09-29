@@ -1,0 +1,110 @@
+.for-new-costumer {
+    background-color: var(--color-gray-1);
+    overflow: hidden;
+    
+   
+}
+
+    .for-new-costumer .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 500px;
+        width: 100%;
+    }
+
+            .for-new-costumer .container .discount {
+                background-color: #20D3C2;
+                position: relative;
+                height: 0%;
+                width: 300px;
+                transition: 0.4s ease-in-out;
+                    
+            }
+                .for-new-costumer .container:hover .discount {
+                    height: 100%;
+                    
+                }
+
+            .for-new-costumer .container .discount h1 {
+                color: var(--color-white);
+                position: absolute;
+                font-size: 3.75rem;
+                font-style: var(--font-play);
+                font-weight: var(--font-weight-bold);
+                top: 36%;
+                left: 35px;
+                opacity: 0;
+
+            
+            }   
+            .for-new-costumer .container:hover .discount h1 {
+                height: 100%;
+                opacity: 1;
+            }
+
+            .for-new-costumer .container .discount h2 {
+                color: var(--color-white);
+                position: absolute;
+                font-size: 2.25rem;
+                font-style: var(--font-play);
+                font-weight: var(--font-weight-bold);
+                top: 207px;
+                right: 60px;
+                opacity: 0;
+            
+            }
+            .for-new-costumer .container:hover .discount h2 {
+                height: 100%;
+                opacity: 1;
+            
+            
+            }
+
+
+            .for-new-costumer .container .discount p {
+                color: var(--color-white);
+                font-weight: var(--font-weight-regular);
+                font-family: var(--font-roboto);
+                font-size: var(--font-size-16);
+                position: absolute;
+                top: 280px;
+                right: 75px;
+                opacity: 0;
+            }
+            .for-new-costumer .container:hover .discount p {
+                height: 100%;
+                opacity: 1;
+            }
+
+                .for-new-costumer .container .discount a {
+                    position: absolute;
+                    top: 325px;
+                    right: 70px;
+                    border: var(--color-theme-dark);
+                    transition: 0.2s ease-in-out;
+                    text-decoration: none;
+
+                }
+                    
+
+.for-new-costumer .learn-more {
+    position: relative;
+    height: 100%;
+    width: 550px;
+
+}
+
+    .for-new-costumer .learn-more p {
+        position: absolute;
+        top: 200px;
+    }
+
+        .for-new-costumer .learn-more a {
+            position: absolute;
+            border: var(--color-theme-dark);
+            bottom: 125px;
+            left: 0;
+            text-decoration: none;
+
+        }

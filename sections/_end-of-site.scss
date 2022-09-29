@@ -1,0 +1,18 @@
+.footer {
+    background-color: var(--color-theme-dark);
+    height: 55px;
+    width: 100%;
+}
+
+.footer .end-of-site {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    color: var(--color-white);
+    padding-top: 15px;
+    margin-left: 308px;
+}
+    .footer .end-of-site p {
+        font-family: var(--font-roboto);
+        font-weight: var(--font-weight-regular);
+    }
